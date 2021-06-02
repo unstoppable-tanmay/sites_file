@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+html{
+    min-height: 100%;
+}
+body{
+    background-color: deepskyblue;
+    overflow: hidden;
+    font-family: 'Nunito', sans-serif;
+}
+.container{
+    width: 1400px;
+    height: 650px;
+    margin-left: 65px;
+    margin-top: 40px;
+    background:linear-gradient(#fff,rgb(117, 206, 83),rgb(65, 174, 218)) ;
+    overflow: hidden;   
+    border-radius: 30px;
+}
+.back{
+    width: 1400px;
+    height: 650px;
+    position: absolute;
+    overflow: hidden;   
+    border-radius: 30px;
+}
+.tea{
+    margin-top: 220px;
+    margin-left: 620px;
+    position: absolute;
+}
+.old{
+    height: 400px;
+    position: absolute;
+    margin-top: 210px;
+    margin-left: 340px;
+    animation: old 5s linear infinite;
+    transform-origin: bottom center;
+    z-index: 5;
+}
+@keyframes old {
+    0%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(5deg);
+    }
+    40%{
+        transform: rotate(-5deg);
+    }
+    60%{
+        transform: rotate(2deg);
+    }
+    80%{
+        transform: rotate(-2deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.smoke{
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 360px;
+    margin-left: 852px;
+    background-color: floralwhite;
+    filter: blur(10px);
+    animation: smoke 4s linear infinite;
+    animation-delay: 0.5s;
+}
+.smoke1{
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 360px;
+    margin-left: 863px;
+    background-color: floralwhite;
+    filter: blur(10px);
+    animation: smoke 4s linear infinite;
+    animation-delay: 1s;
+}
+.smoke2{
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 360px;
+    margin-left: 875px;
+    background-color: floralwhite;
+    filter: blur(10px);
+    animation: smoke 4s linear infinite;
+    animation-delay: 0.8s;
+}
+.smoke3{
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 360px;
+    margin-left: 887px;
+    background-color: floralwhite;
+    filter: blur(10px);
+    animation: smoke 4s linear infinite;
+    animation-delay: 0.1s;
+}
+.smoke4{
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 360px;
+    margin-left: 899px;
+    background-color: floralwhite;
+    filter: blur(10px);
+    animation: smoke 4s linear infinite;
+    animation-delay: 1.5s;
+}
+@keyframes smoke {
+    0%{
+       transform: translate(0px); 
+       filter: blur(10px); 
+     }
+    30%{
+       transform: translateY(-30px); 
+       filter: blur(10px); 
+    }
+    60%{
+        transform: translateY(-50px); 
+        filter: blur(15px); 
+     }
+    95%{
+        transform: translateY(0px); 
+        filter: blur(40px); 
+    }
+    100%{
+       transform: translateY(0px);  
+       filter: blur(20px);
+    }
+}
+.banner{
+    position: absolute;
+    margin-top: -80px;
+    margin-left: 400px;
+}
+h1{
+    position: absolute;
+    color: rgb(168, 137, 137);
+    font-weight: 900;
+    font-size: 5rem;
+    margin-left: 500px;
+    margin-top: 90px;
+    opacity: 1;
+}
+h1:hover{
+    animation: smoke 4s linear infinite;
+}
+h2{
+    position: absolute;
+    color: rgb(168, 137, 137);
+    font-weight: 900;
+    font-size: 5rem;
+    margin-left: 720px;
+    margin-top: 60px;
+    opacity: 1;
+    transform: rotate(-15deg);
+}
+h2:hover{
+    animation: smoke 4s linear infinite;
+}
+@media (max-width: 1118px){
+
+}
+@media (max-width: 944px){
+    
+}
+@media (max-width: 860PX){
+       body{
+           transform: rotate(90deg) scale(0.51);
+           overflow: hidden;
+           margin-top: -290px;
+       }
+}
