@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+html{
+    min-height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: linear-gradient( rgb(196, 123, 123),rgb(106, 163, 180));
+}
+::selection{
+    background: none;
+}
+.container{
+    width: 1300px;
+    height: 630px;
+    margin-left: 120px;
+    margin-top: 55px;
+    background: linear-gradient(rgb(64, 179, 214),rgb(19, 180, 153),rgb(218, 90, 190));
+    border-radius: 20px;
+    position: absolute;
+}
+.text{
+    color: rgb(252, 252, 252);
+    width: 500px;
+    height: 420px;
+    border-radius: 15PX;
+    margin-top: 50px;
+    margin-left: 130px;
+    position: absolute;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+}
+.text1{
+    color: rgb(252, 252, 252);
+    width: 350px;
+    height: 420px;
+    border-radius: 15PX;
+    margin-top: 140px;
+    margin-left: 640px;
+    position: absolute;
+    font-family: 'Nunito', sans-serif;
+}
+h1{
+    color: black;
+}
+h1:hover{
+    color: rgb(224, 217, 217);
+    transition: 1s;
+}
+h2{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    line-height: 10px;
+}
+h3{
+    margin-top: -20px;
+    margin-left: 116px;
+}
+p{
+    margin-left: 100px;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+.image-box{
+    margin-top: 200px;
+    margin-left: 1000px;
+    transition: 1s;
+}
+.image{
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.24);
+    box-shadow: 0 8px 6px -6px black;
+}
+.image1,.image2{
+    width: 700px;
+}
+.image1{
+    margin-top: -130px;
+    margin-left: -210px;
+    position: absolute;
+    transition: 1s;
+}
+.image2{
+    margin-top: -130px;
+    margin-left: -210px;
+    z-index: 2;
+    position: absolute;
+    transition: 1s;
+}
+.image-box:hover  .image2{
+    transform: translateY(-40px);
+}
+.image-box:hover  .image1{
+    transform: translateY(-40px);
+}
+.image-box:hover ~ .h1{
+  color: aliceblue;
+}
+.shape1{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-top: 220px;
+    margin-left: 40px;
+    background-color: rgba(0, 0, 0, 0.24);
+    box-shadow: 0 8px 6px -6px black;
+    filter: blur(0.5px);
+}
+.shape2{
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin-top: 260px;
+    margin-left: 75px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid rgba(0, 0, 0, 0.24);
+    filter: blur(0.5px);
+    box-shadow: 0 8px 6px -6px black;
+}
+.shape3{
+    width: 100px;
+    height: 100px;
+    margin-top: 460px;
+    margin-left: 140px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.24);
+    box-shadow: 0 8px 6px -6px black;
+    filter: blur(0.5px);
+}
+
+.shape5{
+    width: 1400px;
+    height: 400px;
+    position: absolute;
+    margin-left: 252px;
+    margin-top: 129.6px;
+    z-index: -0;
+    border-radius: 20px;
+}
+@keyframes cloud {
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(500px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+@media (max-width: 1118px){
+
+}
+@media (max-width: 944px){
+    
+}
+@media (max-width: 860PX){
+       body{
+           transform: rotate(90deg) scale(0.51) scaleX(0.91);
+           margin-left: 370px;
+           margin-top: 0px;
+           overflow: hidden;
+       }
+}
+.gear{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    margin-top: -150px;
+    margin-left: 400px;
+    z-index: 10;
+    animation: gear 8s linear infinite;
+}
+.gear1{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin-top: -180px;
+    margin-left: 550px;
+    z-index: 10;
+    animation: gear1 4.1s linear infinite;
+}
+.gear2{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    margin-top: -115px;
+    margin-left: 625px;
+    z-index: 10;
+    animation: gear 3s linear infinite;
+}
+@keyframes gear {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes gear1 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}

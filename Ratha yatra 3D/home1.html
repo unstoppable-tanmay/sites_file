@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .containor
+      {
+            width: 700px;
+            height: 700px;
+            margin-left: 450px;
+            margin-top: 100px; 
+        }
+        .roof
+        {
+            width: 400px;
+            height: 0;
+            border-bottom: 120px solid red;
+            border-left:60px solid transparent;
+            border-right:60px solid transparent ;
+        }
+       .home
+       {
+            width: 400px;
+            height: 300px;
+            background-color: tomato;
+            margin-left: 63px;
+            margin-top: -0px;
+        }
+        .door{
+            width: 100px;
+            height: 200px;
+            background-color: rgb(71, 255, 102);
+            margin-left: 200px;
+            margin-top:-200px;
+        }
+        .window1
+        {   width: 80px;
+            height: 80px;
+            background-color: rgb(255, 71, 224);
+            margin-left: 90px;
+            margin-top: -250px;
+        }
+        .window2
+        {   width: 80px;
+            height: 80px;
+            background-color: rgb(255, 71, 224);
+            margin-left: 340px;
+            margin-top: -80px;
+        }
+        .r1{
+            width: 5px;
+            height: 80px;
+            background-color: black;
+            position: absolute;
+            margin-left: 0px;
+            margin-top: 0px;
+        }
+        .r2{
+            width: 5px;
+            height: 80px;
+            background-color: black;
+            position: absolute;
+            margin-left: 20px;
+            margin-top: 0px;
+        }
+        .r3{
+            width: 5px;
+            height: 80px;
+            background-color: black;
+            position: absolute;
+            margin-left: 40px;
+            margin-top: 0px;
+        }
+        .r4{
+            width: 5px;
+            height: 80px;
+            background-color: black;
+            position: absolute;
+            margin-left: 60px;
+            margin-top: 0px;
+        }
+        .r5{
+            width: 5px;
+            height: 80px;
+            background-color: black;
+            position: absolute;
+            margin-left: 80px;
+            margin-top: 0px;
+        }
+        .door1{
+            width: 90px;
+            height: 190px;
+            transform: rotateY(30deg) skewY(10deg);
+            transform-origin: left;
+            background: url("images/floor.jpg");
+            background-size: cover;
+            position: absolute;
+            z-index: 2;
+            margin-top: 10px;
+        }
+        .b1{
+            width: 10px;
+            height: 200px;
+            background-color: black;
+            position: absolute;
+            margin-left: 40px;
+            margin-top: 0px;
+            margin-left: -10px;
+        }
+        .b2{
+            width: 10px;
+            height: 200px;
+            background-color: black;
+            position: absolute;
+            margin-left: 40px;
+            margin-top: 0px;
+            margin-left: 90px;
+        }
+        .b3{
+            width: 100px;
+            height: 10px;
+            background-color: black;
+            position: absolute;
+            margin-left: 40px;
+            margin-top: 0px;
+            margin-left: 0px;    
+        }
+
+    </style>
+</head>
+<body> <div class="containor">
+     <div class="roof"></div>
+     <div class="home"></div>
+     <div class="door">
+         <div class="door1"></div>
+         <div class="b1"></div>
+         <div class="b2"></div>
+         <div class="b3"></div>
+     </div>
+     <div class="window1">
+         <div class="r1"></div>
+         <div class="r2"></div>
+         <div class="r3"></div>
+         <div class="r4"></div>
+         <div class="r5"></div>
+     </div>
+     <div class="window2">
+        <div class="r1"></div>
+        <div class="r2"></div>
+        <div class="r3"></div>
+        <div class="r4"></div>
+        <div class="r5"></div>
+    </div>
+</div>
+    
+</body>
+</html>

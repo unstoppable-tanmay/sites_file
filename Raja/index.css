@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+body{
+    width: 1500px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.container{
+    width: 1550px;
+    margin: 0;
+    padding: 0;
+    height: 700px;
+    z-index: 10;
+    position: fixed;
+}
+.box{
+    width: 1550px;
+    height: 4900px;
+    background: linear-gradient(to top,  #00f260,#4692df,#549ee7,#4692df,#61a2e4,#549ee7,#36d1dc, #4caacf, #4f5052);
+    animation: box 15s forwards 1 ;
+    overflow: hidden;
+}
+@keyframes box {
+    0%{
+        margin-top: 0px;
+    }
+    100%{   
+        margin-top: -4200px;
+    }
+}
+.cloud1{
+    position: absolute;
+    width: 550px;
+    height: auto;
+    margin-top: 500px;
+    margin-left: 100px;
+    animation: cloud1 15s linear infinite;
+}
+.cloud2{
+    position: absolute;
+    width: 950px;
+    height: auto;
+    margin-top: 1500px;
+    margin-left: 100px;
+    animation: cloud2 15s linear infinite;
+}
+.cloud3{
+    position: absolute;
+    width: 550px;
+    height: auto;
+    margin-top: 3000px;
+    margin-left: 800px;
+    animation: cloud1 15s linear infinite;
+}
+.cloud4{
+    position: absolute;
+    width: 950px;
+    height: auto;
+    margin-top: 4000px;
+    margin-left: 1100px;
+    animation: cloud2 15s linear infinite;
+}
+@keyframes cloud1 {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(700px);
+    }
+}
+@keyframes cloud2 {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-1400px);
+    }
+}
+.drop{
+    position: absolute;
+    width: 60px;
+    margin-left: 740px;
+    margin-top: 150px;
+    animation: drop 15.5s forwards 1 ;
+}
+@keyframes drop {
+    0%{
+        margin-top: 300px;
+    }
+    95%{   
+        margin-top: 4785px;
+        opacity: 1;
+    }
+    100%{
+        margin-top: 4810px;
+        opacity: 0;
+    }
+}
+.lawn{
+    width: 1550px;
+    height: 300px;
+    margin-top: 4650px;
+    position: absolute;
+}
+.tree{
+    position: fixed;
+    width: 500px;
+    margin-top: 4500px;
+    animation: tree 20s forwards 1;
+}
+.tree1{
+    position: fixed;
+    width: 350px;
+    margin-top: 4525px;
+    margin-left: 1000px;
+    animation: tree1 20s forwards 1;
+}
+.tree2{
+    position: fixed;
+    width: 350px;
+    margin-top: 4560px;
+    margin-left: 1200px;
+    animation: tree2 20s forwards 1;
+}
+@keyframes tree {
+    0%{
+        width: 50px;
+        margin-top: 4750px;
+        margin-left: 150px;
+    }
+    65%{
+        width: 50px;
+        margin-top: 4750px;
+        margin-left: 150px;
+    }
+    100%{  
+        width: 550px;
+        margin-top: 4370px;
+    }
+}
+@keyframes tree1 {
+    0%{
+        width: 50px;
+        margin-top: 4750px;
+        margin-left: 150px;
+    }
+    65%{
+        width: 50px;
+        margin-top: 4750px;
+        margin-left: 1150px;
+    }
+    100%{  
+        width: 350px;
+    }
+}
+@keyframes tree2 {
+    0%{
+        width: 50px;
+        margin-top: 4750px;
+        margin-left: 150px;
+    }
+    65%{
+        width: 50px;
+        margin-top: 4750px;
+        margin-left: 1350px;
+    }
+    100%{  
+        width: 350px;
+    }
+}
+.boy{
+    width: 200px;
+    position: absolute;
+    margin-top: 4720px;
+    margin-left: 1000px;
+    animation: boy 15s forwards 1;
+}
+@keyframes boy {
+    0%{
+        opacity: 0;
+    }
+    99%{
+        opacity: 0;
+    }
+    100%{ 
+        opacity: 1;
+    }
+}
+.swing{
+    width: 50px;
+    position: absolute;
+    animation: swing 21s forwards 1;
+}
+@keyframes swing {
+    0%{
+        opacity: 0;
+    }
+    94%{
+        opacity: 0;
+    }
+    95%{
+        opacity: 1;
+    }
+}
+.swingmain{
+    width: 50px;
+    position: absolute;
+    margin-top: 4651px;
+    margin-left: 320px;
+    animation: swing1 2.3s linear infinite;
+}
+@keyframes swing1 {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(7deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.chain{
+    width: 30px;
+    height: 400px;
+    position: absolute;
+    margin-top: 4120px;
+    margin-left: 650px;
+    animation: chain 7s linear infinite;
+    transform-origin: top;
+}
+.chain1{
+    width: 30px;
+    height: 400px;
+    position: absolute;
+    margin-top: 4120px;
+    margin-left: 920px;
+    animation: chain 7s linear infinite;
+    transform-origin: top;
+}
+.boardmain{
+    width: 420px;
+    position: absolute;
+    margin-top: 4460px;
+    margin-left: 565px;
+    animation: board 7s linear infinite;
+    font-family: 'Rock Salt', cursive;
+    font-weight: 900;
+    font-size: 30px;
+    animation-delay: 3.5s;
+}
+.board{
+    width: 420px;
+    position: absolute;
+}
+.boardmain h2{
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 150px;
+}
+.boardmain h1{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+@keyframes board {
+    0%{
+        transform: translateX(26px);
+    }
+    50%{
+        transform: translateX(-26px);
+    }
+    100%{
+        transform: translateX(26px);
+    }
+}
+@keyframes chain {
+    0%{
+        transform: rotate(5.1deg);
+    }
+    50%{
+        transform: rotate(-5.1deg);
+    }
+    100%{
+        transform: rotate(5.1deg);
+    }
+}
+.text{
+    animation: text 20s ease-in-out 1;
+}
+@keyframes text {
+    0%{
+        opacity: 0;
+        transform: translateY(-600px);
+    }
+    99%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@media (max-width: 1118px){
+
+}
+@media (max-width: 1118px){
+    
+}
+@media (max-width: 860PX){
+    body{
+        transform: rotate(90deg);
+        zoom: 55%;
+    }
+    .container{
+        margin-left: 650px;
+        overflow: hidden;
+        height: 750px;
+    }
+}
