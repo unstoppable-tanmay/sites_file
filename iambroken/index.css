@@ -1,0 +1,113 @@
+html{
+    min-height: 100%;
+}
+body{
+    background-color: black;
+    overflow: hidden;
+    line-height: 0.5;
+}
+::selection{
+    background: none;
+}
+.container{
+    width: 500px;  
+    height: 580px;
+    background-color: rgb(0, 0, 0);
+    margin-top: 50px;
+    margin-left: 510px;
+}
+.happy{
+    width: 200px;
+    height: 200px;
+    margin-top: 80px;
+    margin-left: 148px;
+    position: absolute;
+}
+.sad{
+    width: 330px;
+    height: 323px;
+    margin-top: 55px;
+    margin-left: 55px;
+    position: absolute;
+    display: none;
+    transition: 2s;
+}
+span,.iam{
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 0 15px #fff;
+    font-weight: 900;
+}
+.text{
+    width: 150;
+    height: 50;
+    padding-top: 300px;
+    text-align: center;
+    font-weight: 900;
+}
+.broken ,.iam{
+    font-size: 4rem;
+    text-align: center;
+}
+.broken{
+    padding-left: 5px;
+}
+.happy:hover ~ .sad{
+    display: block;
+    color: rgb(77, 75, 75);
+}
+.happy:hover ~ .text{
+    color: rgb(77, 75, 75);
+}
+@media (max-width: 1118px){
+
+}
+@media (max-width: 1118px){
+    
+}
+@media (max-width: 860PX){
+       body{
+           width: 400px;
+           height: 644px;
+           overflow: hidden;
+           margin: 0;
+           padding: 0;
+       }
+       .container{
+        width: 350px;  
+        height: 600px;
+        background-color: rgb(0, 0, 0);
+        margin: 0;
+        padding: 0;
+    }   
+    .happy{
+        width: 200px;
+        height: 200px;
+        margin-top: 230px;
+        margin-left: 98px;
+        position: absolute;
+    }
+    .sad{
+        width: 330px;
+        height: 323px;
+        margin-top: 205px;
+        margin-left: 5px;
+        position: absolute;
+        display: none;
+        transition: 2s;
+    }
+    .text{
+        width: 150;
+        height: 50;
+        padding-top: 400px;
+        text-align: center;
+        font-weight: 900;
+    }
+    .broken ,.iam{
+        padding-left: 40px;
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    .broken{
+        padding-left: 35px;
+    }
+}

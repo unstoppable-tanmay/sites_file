@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+
+        <div class="container">
+            <div id="myPopup">
+               
+                <ul class="quiz">
+                    <li>
+                      <h4>Light as a Feather,but the strongest man can't hold it much more than a minute ?</h4>
+                      <ul class="choices">
+                        <li><label><input type="radio" name="question0" value="A"><span>Breath</span></label></li>
+                        <li><label><input type="radio" name="question0" value="B"><span>fire</span></label></li>
+                        <li><label><input type="radio" name="question0" value="C"><span>Air</span></label></li>
+                        <li><label><input type="radio" name="question0" value="D"><span>Water</span></label></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <h4>If you feed it ,it lives ,if you water it dies ?</h4>
+                      <ul class="choices">
+                        <li><label><input type="radio" name="question1" value="A"><span>frog</span></label></li>
+                        <li><label><input type="radio" name="question1" value="B"><span>cocrose</span></label></li>
+                        <li><label><input type="radio" name="question1" value="C"><span>Fire</span></label></li>
+                        <li><label><input type="radio" name="question1" value="D"><span>you</span></label></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <h4>What comes once a minute,twice a week and once a year?</h4>
+                      <ul class="choices">
+                        <li><label><input type="radio" name="question2" value="A"><span>life</span></label></li>
+                        <li><label><input type="radio" name="question2" value="B"><span>E</span></label></li>
+                        <li><label><input type="radio" name="question2" value="C"><span>date</span></label></li>
+                        <li><label><input type="radio" name="question2" value="D"><span>I</span></label></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  
+                  <button id="view-results" onclick="returnScore()">CAN I GO</button>
+                  <span style="display: none;" id="goto"><a href="level2.html" target="_self">GO</a></span>  
+                  <a href="#" id="myExit" style="border: 2px solid black; border-radius: 3px;" onclick="closePopup();return false">X</a>    
+            </div>
+            
+            <div class="palace">
+                <img class="palacea" src="images/palace.png" >
+                
+                <div class="soldier">
+                   <a href="#"  onclick="openPopup(); return false;">
+                       <img class="soldiera" src="images/soldir1.png" alt="">
+                    </a>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="text">
+           <u> INSTRUCTION </u>
+       
+           <div class="instruction">
+               <p>
+                   Hi Friends, <br> This is a game made by me so enjoy and please suscribe my youtube channel <br>
+                   - you have to go in the palace first. <br>
+                   - for get in you have to give the answer of the riddles of the soldier so thst you can go in. <br>
+                   - to give the riddles click on the SOLDIER for popup. <br>
+                   - then guess the ans and then click on CAN I GO then if all correct click on GO.
+               </p>
+               
+           </div>
+        </div>    
+    </div>
+    <h3>click on the soldier</h3>
+    <script>
+          function openPopup() {
+    popup = document.getElementById("myPopup");
+    popup.style.display = "block";
+  }
+
+  function closePopup() {
+    popup = document.getElementById("myPopup");
+    popup.style.display = "none";
+  }  
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>

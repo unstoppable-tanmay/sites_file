@@ -1,0 +1,194 @@
+html{
+    min-height: 100%;
+}
+body{
+    height: 700px;
+    overflow: hidden;
+}
+.container{
+    width: 100%;
+    height: 100%;   
+}
+.room{
+    width: 1000px;
+    height: 700px;
+    margin-left: 280px;
+    margin-top: 15px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.308);
+}
+.backwall{
+    position: absolute;
+    width: 800px;
+    height: 700px;
+}
+.backwall1{
+    position: absolute;
+    width: 900px;
+    height: 500px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.bottomwall{
+    position: absolute;
+    width: 800px;
+    height: 700px;
+}
+.bottomwall1{
+    position: absolute;
+    width: 1230px;
+    height: 800px;
+    margin-top: 200px;
+    margin-left: -115px;
+    transform: perspective(1000px) rotateX(70deg) rotateY(-0.8deg) scaleX(-1);
+    filter: drop-shadow(100px);
+}
+.topwall{
+    position: absolute;
+    width: 800px;
+    height: 700px;
+}
+.topwall1{
+    position: absolute;
+    width: 1230px;
+    height: 800px;
+    margin-top: -460px;
+    margin-left: -115px;
+    transform: perspective(1000px) rotateX(-70deg) rotateY(-1deg) scaleX(-1) ;
+    filter: drop-shadow(100px);
+}
+.rightwall{
+    position: absolute;
+    width: 800px;
+    height: 700px;
+}
+.rightwall1{
+    position: absolute;
+    width: 900px;
+    height: 600px;
+    margin-top: -28px;
+    margin-left: -455px;
+    transform: perspective(1000px) rotateY(60deg) rotateY(0deg) scaleX(-1);
+    filter: drop-shadow(100px);
+}   
+.leftwall{
+    position: absolute;
+    width: 800px;
+    height: 700px;
+}
+.leftwall1{
+    position: absolute;
+    width: 900px;
+    height: 600px;
+    margin-top: -28px;
+    margin-left: 600px;
+    transform: perspective(1000px) rotateY(-60deg) rotateY(0deg) scaleX(-1);
+    filter: drop-shadow(100px);
+}
+.logo{
+    position: absolute;
+    width: 380px;
+    margin-left: 340px;
+    margin-top: 20px;
+    mix-blend-mode: screen;
+    transform-style: preserve-3d;
+    transform: translateZ(-40px) perspective(500px);
+    box-shadow:  20px 40px black;
+}
+.model{
+    margin-top: 400px;
+    margin-left: 420px;
+    height: 200px;
+    width: 200px;
+    transform-style: preserve-3d;
+    animation: roatation  6s linear infinite;
+    transform: translate3d(0,0,100px);
+}
+@keyframes rotate {
+    0% {
+      transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(0) rotateY(0) rotateZ(0deg) translateX(0) translateY(0px) translateZ(0px) skew(0deg, 0deg);
+    }
+    100% {
+      transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(0) rotateY(360deg) rotateZ(360deg) translateX(0px) translateY(0) translateZ(0px) skew(0deg, 0deg);
+    }
+  }
+.s1,.s2,.s3,.s4,.s5,.s6{
+    position: absolute;
+    height: 160px;
+    width: 160px;
+    padding: 20px;
+    opacity: 1;
+    background-position: center center;
+    background: url(cracked.jpg);
+    background-position-x: -70px;
+    background-size: cover;
+}
+.s1{
+    transform: translateZ(100px);
+}
+.s2{
+    transform: rotateY(90deg) translateZ(100px);
+}
+.s3{
+    transform: rotateY(180deg) translateZ(100px);
+}
+.s4{
+    transform: rotateY(-90deg) translateZ(100px);
+}
+.s5{
+    transform: rotateX(-90deg) translateZ(100px) rotate(180deg);
+}
+.s6{
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+@keyframes roatation {
+    0% {
+      transform: rotateX(-10deg) rotateZ(0deg);
+    }
+    10% {
+      transform: rotateX(-30deg) rotateZ(15deg);
+    }
+    20% {
+      transform: rotateX(-90deg) rotateY(15deg) rotateZ(-15deg);
+    }
+    40% {
+      transform: rotateX(-15deg) rotateY(-90deg) rotateZ(15deg);
+    }
+    60% {
+      transform: rotateY(15deg) rotateX(90deg) rotateZ(-15deg);
+    }
+    80% {
+      transform: rotateX(-15deg) rotateY(90deg) rotateZ(-15deg);
+    }
+    100% {
+      transform: rotateX(-15deg) rotateY(180deg) rotateZ(-15deg);
+    }
+  }
+  h2{
+      position: absolute;
+      color: rgb(197, 189, 189);
+      margin-top: 400px;
+      margin-left: 650px;
+      font-size:12px;
+  }
+@media (max-width: 1118px){
+
+}
+@media (max-width: 1118px){
+    
+}
+@media (max-width: 860PX){
+    body{
+      transform: rotate(90deg) scale(0.48);
+      margin-top: -100px;
+      margin-left: 70px;
+      width: 360px;
+      height: 300px;  
+      overflow: hidden;
+    }
+    .topwall1{
+      margin-top: -440px;
+      transform: perspective(1000px) rotateX(-70deg) rotateY(0deg) scaleX(-1) ;
+}
+}

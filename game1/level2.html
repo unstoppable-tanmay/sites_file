@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="level2.css">
+    <script src="level2.js"></script>
+</head>
+<body onload="zoom()">
+    <div class="back">
+       <span class="bbutton"><a href="index.html">BACK</a></span>
+    <div class="text"><u> INSTRUCTION</u>
+       <div class="instruction">
+        <p>Hi Friens, <br>
+         - This is TANMAY. <br>
+         - This the 2nd level of the game. <br> 
+         - You have to cross the secrste room to go to the king. <br>
+         - To cross first light on the room. <br>
+         - Then you can see the monster and then you have to kill the monster by clicking on it. <br>
+         - Then click on the grave to go ahead.
+        </p> 
+       </div>
+    </div>
+    </div>
+    <div>
+        <img class="wall" id="wall1" src="images/intwall1.jpg"  alt="">
+        <img class="monst" id="monst1" src="images/monst.png" onclick="kill(this)" alt="">
+        <a href="level3.html" target="self"><img class="monst2" id="rip" src="images/rip.png"  alt=""></a>
+    </div>
+    <div class="button">
+        <button onclick="lighton()" > LIGHT ON</button>
+    </div>
+    <h3 class="note">kill the monstor <br> Read INSTRUCTION</h3>
+
+    <script> 
+  function lighton() {
+    document.getElementById("wall1").style.filter = "brightness(1)";
+    document.getElementById("monst1").style.display = "block";
+  }  
+  function kill(monst1) {
+    document.getElementById("monst1").style.display = "none"
+    document.getElementById("rip").style.display = "block"
+  }
+  function zoom() {
+      docoment.body.style.zoom = "90%"
+  }
+
+    </script>
+</body>
+</html>

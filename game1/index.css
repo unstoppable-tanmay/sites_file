@@ -1,0 +1,179 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background: radial-gradient(#222,black) ;
+      background-size: cover;
+}
+::selection{
+    background: skyblue;
+}
+
+.container{
+    width: 700px;
+    height: 500px;
+    margin-left: 100px;
+    left: 60%;
+    -webkit-transform: translate(60%);
+    border-radius: 30px;
+    box-shadow: inset 0 0 10px #000000;
+    display: table-cell;
+    background-image: url(images/back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    clear: none;
+}
+.palace{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+.palacea{
+    width: 100%;
+    height: 100%;
+}
+.soldier{
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+    padding-top:430px;
+    padding-left: 300px;
+    position: absolute;
+
+}
+.soldiera{
+    width: 115px;
+    height: 160px;
+    z-index: 10;
+    animation: move 4s linear infinite;
+}
+.soldiera::selection{
+    background: none;
+}
+@keyframes move{
+    0%{
+        transform: translateX(-100px);
+    }
+    50%{
+        transform: translateX(100px)
+    }
+    100%{
+        transform: translateX(-100px);
+    }
+}
+#myPopup {
+    display: none;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    text-shadow: black 10px;
+    position: absolute;
+    margin-left: 7.5%;
+    z-index: 15;
+    background-color: rgba(254, 254, 255, 0.781);
+    border-radius: 30px;
+    height:auto;
+    width:70%;
+    list-style: none;
+    right: 50%;
+    -webkit-transform: translate(50%);
+  }
+
+  #myExit {
+    position: absolute;
+    right:20px;
+    top: 40px;
+    padding: 3px;
+    box-sizing: 10px;
+    text-align: right;
+    color:white;
+    background: radial-gradient(ellipse at top, #e66465, transparent),
+    radial-gradient(ellipse at bottom, #4d9f0c, transparent);;
+  }
+  #view-results{
+      text-align: center;
+      margin-left: 180px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      background: radial-gradient(ellipse at top, #e66465, transparent),
+      radial-gradient(ellipse at bottom, #4d9f0c, transparent);
+      left: 100px;
+  }
+.instruction{
+    display: none;
+    width: 400px;
+    color: black;
+    font-weight: bolder;
+    background-color: rgba(255, 255, 255, 0.616);
+}
+.text{
+    
+    background-color: rgba(255, 255, 255, 0.616);
+    color: black;
+    font-weight: bolder;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 20;
+    top: 0%;
+    right: 0%;
+    -webkit-transform: translate(0%,0%);
+}
+.text:hover .instruction{
+    display: block;
+}
+#goto{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    margin-left: 160px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background: radial-gradient(ellipse at top, #e66465, transparent),
+    radial-gradient(ellipse at bottom, #4d9f0c, transparent);
+    left: 100px;
+}
+h3{
+    text-align: center;
+}
+@media (max-width: 1118px) {
+
+
+}
+
+@media (max-width: 944px) {
+   
+
+}
+
+@media (max-width: 860px) {
+    .container{
+        left: 0%;
+        -webkit-transform: translate(0%);
+    }
+    .soldier{
+        width: 50%;
+        height: 50%;
+        overflow: hidden;
+        padding-top:340px;
+        padding-left: 150px;
+        position: absolute;
+    
+    }
+    #myPopup {
+        width: 90%;
+        margin-left: 15px;
+    }
+   .instruction{
+       width: 300px;
+       color: black;
+       font-weight: bolder;
+       background-color: rgba(255, 255, 255, 0.616);
+   }
+   .text{
+    background-color: rgba(255, 255, 255, 0.616);
+    color: black;
+    font-weight: bolder;
+   }
+}

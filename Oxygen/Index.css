@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+  }
+  body{ 
+    min-height: 100vh;
+  }
+  ::selection{
+    background: none;
+  }
+  .container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+.d,.o,.nate{
+   font-size: 80px;
+   transition: 0.4s;
+}
+.o{
+  margin-left: -150px;
+  color: rgb(55, 161, 228);
+  margin-top: 25px;
+}
+.d{
+  margin-left: -300px;
+}
+.d,.nate{
+  opacity: 0;
+}
+.o:hover{
+  margin-left: -180px;
+}
+.o:hover ~ .nate{
+  opacity: 1;
+}
+.o:hover ~ .d{
+  opacity: 1;
+}
+.o:hover ~ h3::before{
+  opacity: 0;
+}
+.o:hover ~ h3::after{
+  opacity: 1;
+}
+h3{
+  position: absolute;
+  font-size: 20px;
+  margin-top: 140px;
+  margin-left: 50px;
+}
+h3::before{
+  position: absolute;
+  content: "Oxygen";
+  display: flex;
+  transition: 1s;
+}
+h3::after{
+  content: "Help To Breath India";
+  opacity: 0;
+  display: flex;
+  transition: 1s;
+}
+
+
+h1{
+  position: absolute;
+  transition: 0.5s;
+  color: lightgreen;
+  margin-top: -150px;
+  display: none;
+}
+.o:hover ~ h1{
+  display: block;
+}
+h1 span{
+  display: flex;
+  position: absolute;
+  animation: plus 2s linear infinite;
+}
+h1 :nth-child(1){
+  font-size: 50px;
+  margin-left: -150px;
+  padding-left: 40px;
+  animation-delay: 1.5s;
+}
+h1 :nth-child(2){
+  font-size: 40px;
+  margin-left: -70px;
+  padding-left: 20px;
+  animation-delay: 0.5s;
+}
+h1 :nth-child(3){
+  font-size: 60px;
+  margin-left: -30px;
+  padding-left: 20px;
+  animation-delay: 0s;
+}
+h1 :nth-child(4){
+  font-size: 30px;
+  margin-left: 50px;
+  padding-left: 20px;
+  animation-delay: 1s;
+}
+h1 :nth-child(5){
+  font-size: 50px;
+  margin-left: 90px;
+  padding-left: 20px;
+  animation-delay: 1.2s;
+}
+@keyframes plus {
+  0%{
+    
+    transform: translateY(0px);
+  }
+  90%{
+    transform: translateY(-50px);
+  }
+  100%{
+    transform: translateY(-80px);
+    opacity: 0;
+  }
+}
+.oxy{
+  position: absolute;
+  width: 200px;
+  margin-left: -500px;
+  margin-top: 250px;
+  z-index: 1;
+}
+.o:hover ~ .oxy{
+  animation: oxy 4s forwards 1;
+}
+@keyframes oxy {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(340px);
+  }
+}
+.mask{
+  position: absolute;
+  width: 300px;
+  margin-left: 500px;
+  opacity: 0.8;
+  margin-top: 200px;
+}
+.o:hover ~ .mask{
+  animation: mask 4s forwards 1;
+}
+@keyframes mask {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-450px);
+  }
+}
+@media (max-width: 1118px){
+
+}
+@media (max-width: 1118px){
+    
+}
+@media (max-width: 860PX){
+  .o{
+    margin-left: -130px;
+    margin-top: 0px;
+  }
+  .d{
+    margin-left: -320px;
+  }
+  .o:hover{
+    margin-left: -215px;
+  }
+  .o:hover ~ h3::after{
+    opacity: 1;
+    margin-left: -80px;
+  }
+  h3{
+    position: absolute;
+    font-size: 20px;
+    margin-top: 110px;
+    margin-left: 60px;
+  }
+  h1{
+    margin-top: -150px;
+    margin-left: -40px;
+  }
+  .oxy{
+    width: 100px;
+    margin-left: -170px;
+    margin-top: 220px;
+  }
+  .o:hover ~ .oxy{
+    animation: oxy 4s forwards 1;
+  }
+  @keyframes oxy {
+    0%{
+      transform: translateX(0);
+    }
+    100%{
+      transform: translateX(110px);
+    }
+  }
+  .mask{
+    width: 150px;
+    margin-left: 150px;
+    margin-top: 200px;
+  }
+  .o:hover ~ .mask{
+    animation: mask 4s forwards 1;
+  }
+  @keyframes mask {
+    0%{
+      transform: translateX(0);
+    }
+    100%{
+      transform: translateX(-110px);
+    }
+  }
+}
