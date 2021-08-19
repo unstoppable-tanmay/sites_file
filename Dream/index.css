@@ -1,0 +1,161 @@
+html{
+    min-height: 100%;
+}
+body{
+    background: #c94b4b;  
+    background: -webkit-linear-gradient(to top, #4b134f, #c94b4b); 
+    background: linear-gradient(to top, #4b134f, #c94b4b); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    width: 1400px;
+    height: 700px;
+    border-radius: 30px;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 60px;
+    overflow: hidden;
+    background: #2980B9; 
+    background: -webkit-linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9); 
+    background: linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9);
+}
+.cliff{
+    width: 780px;
+    height: 650px;
+    margin-top: 50px;
+    margin-left: 630px;
+    position: absolute;
+}
+.boy{
+    width: 200px;
+    height: 150px;
+    margin-top: 450px;
+    margin-left: 700px;
+    z-index: 1;
+    position: absolute;
+}
+.dream1{
+    width: 510PX;
+    height: 310PX;
+    margin-top: 50px;
+    margin-left: 40px;
+    opacity: 0.7;
+}
+.dream1:hover {
+    animation: smoke 2s linear forwards;
+    animation-iteration-count: 1;
+}
+@keyframes smoke {
+    0% {
+        transform: rotate(0deg) translateY(0px);
+        opacity: 1;
+        filter:blur(1px);
+    }
+    100% {
+      transform: rotate(45deg) translateY(-200px);
+        opacity: 0;
+        filter:blur(20px);
+    }
+}
+.dream{
+    width: 610PX;
+    height: 610PX;
+    margin-top: -50px;
+    margin-left: 440px;
+    position: absolute;
+}
+@keyframes cloud {
+    0%{
+        transform:  rotateX(0deg) skew(10deg);
+    }
+    50%{
+        transform:  rotate(-2deg) skew(10deg);
+    }
+    100%{
+        transform:  rotateX(0deg) skew(10deg);
+    }
+}
+.cloud{
+    width: 600PX;
+    height: 600PX;
+    padding-left: 14px;
+    position: absolute;
+    mix-blend-mode: hard-light;
+    transform: scaleX(-1);
+    animation: cloud 4s linear infinite;
+}
+.slide{
+    width: 330PX;
+    height: 200PX;
+    margin-top: 110px;
+    margin-left: 130px;
+    position: absolute;
+}
+.slide img{
+    width: 300px;
+    height: 200px;
+    opacity: 0;
+    position: absolute;
+    filter: blur(0.5px);
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+}
+.coder{
+    animation: fade 2s ease-in-out 1;
+    animation-delay: 1s;
+}
+.girl{
+    animation: fade 2s ease-in-out 1;
+    animation-delay: 3s;
+}
+.friend{
+    animation: fade 2s ease-in-out 1;
+    animation-delay: 5s;
+}
+.car{
+    animation: fade 2s ease-in-out 1;
+    animation-delay: 7s;
+}
+.study{
+    animation: fade 2s ease-in-out 1;
+    animation-delay: 9s;
+}
+.degree{
+    animation: fade 2s ease-in-out 1;
+    animation-delay: 11s;
+}
+.clg{
+    animation: fade 2s ease-in-out 1;
+    animation-delay: 13s;
+}
+.buisness{
+    animation: fade 2s ease-in-out 1;
+    animation-delay: 15s;
+}
+.unstoppable{
+    animation: fade 2s ease-in-out 1;
+    animation-delay: 17s;
+    width: 100px ;
+}
+@media (max-width: 1118px){
+
+}
+@media (max-width: 1118px){
+    
+}
+@media (max-width: 860PX){
+       body{
+           transform: rotate(90deg) scale(0.48) ;
+           margin-top: 8px;
+           margin-left: 340px;
+           background: -webkit-linear-gradient(to left, #4b134f, #c94b4b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #4b134f, #c94b4b);
+       }
+}

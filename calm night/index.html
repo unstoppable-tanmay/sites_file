@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div onmouseenter="playAudio()" id="first" class="first">
+        <video autoplay muted loop class="video" src="images/Untitled 7_360p.mp4"></video>
+        <p class="text">Sayad Mai Kabhi Mehsoos Nih kar Paonga..... Sayad tum Kabhi jaan hi nehi paogi meri <br> khusi par 
+            mai ek baat saaf kar doon <br> ki jitini khusi mujhe tumse baat <br> karke hote hai sayad ye kisi <br> aur se na ho.... <br>
+            Mai tumhare bliye chand tare tou <br> nhi tod sakta par tumhe <br> khusi ka khyaal jarur <br> rakhonga... <br>  &#128149;
+        </p>
+        <a href="#" onclick="changeclass()"><h1 class="letter">&#128140;</h1></a>
+        <h3>click to open</h3>
+    </div>
+    <div onmouseenter="playAudio()" id="second" class="second">
+        <video autoplay muted loop class="video1" src="images/Untitled 7_360p.mp4"></video>
+        <img src="images/girl1.jpg" class="img1">
+        <img src="images/girl2.jpg" class="img2">
+        <img src="images/girl3.jpg" class="img3">
+        <img src="images/girl4.jpg" class="img4">
+        <a href="#" onclick="changeclass1()"><h1>&#128150;</h1></a>
+        <h3>click to open</h3>
+    </div>
+    <div onmouseenter="playAudio()" class="container">
+               <img class="back" src="images/back.jpg" >
+               <img class="girl" src="images/girl.png" >
+               <img class="lo1" src="images/lo1.png" >
+               <img class="lo2" src="images/lo2.png" >
+               <img class="lo3" src="images/lo3.png" >
+               <img class="lo4" src="images/lo4.png" >
+               <img class="love1" src="images/love2.png" >
+               <img class="love2" src="images/love1.png" >
+               <img class="love3" src="images/love2.png" >
+               <img class="boy" src="images/boy.png" >
+               <img class="ballon" src="images/ballon.png" >
+    </div>
+
+    <script>
+        function changeclass() {
+        
+        var NAME = document.getElementById("first")
+        
+        NAME.className="first1"
+        
+        } 
+        function changeclass1() {
+        
+        var NAME = document.getElementById("second")
+        
+        NAME.className="second1"
+        
+        } 
+        </script>
+        <audio id="audioID"> 
+            <source src="images/back.mp3" type="audio/mpeg">
+        </audio>
+        <script>
+            var audio1 = document.getElementById("audioID");
+            function playAudio() {
+                audio1.play();
+            }
+        </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAVE EARTH</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div id="clean" class="cleancontainer">
+            <input id="btn" class="btn" type="button" name="click here" value="SMASH EARTH" onclick="change()" >
+            <input id="btn1" class="btn1" type="button" name="click here" value="SAVE EARTH" onclick="back()" >
+             <img id="cleanback" class="cleanback" src="images/cleanback.jpg">
+             <img id="cleanearth" class="" src="images/earth.png">
+             <img id="cleantree" class="cleantree" src="images/tree.png">
+             <img id="cleantree1" class="cleantree1" src="images/tree.png">
+             <img id="cleansun" class="cleansun" src="images/sunhappy.png">
+             <img id="cut" class="cut" src="images/cut.png">
+             <img id="truck" class="truck" src="images/truck.png">
+             <img id="cloud" class="cloud" src="images/cloud.png">
+        </div>
+    </div>
+
+
+
+
+    <script>
+        function change(){
+            document.getElementById('cleanback').src="images/pollutedback.jpg";
+            document.getElementById('cleantree').style.display = "none";
+            document.getElementById('cleantree1').style.display = "block";
+            document.getElementById('cut').style.display = "block";
+            document.getElementById('cleanearth').className = "cleanearth";
+            document.getElementById('cleansun').src="images/sunangry.png";
+            document.getElementById('truck').style.display = "block";
+            document.getElementById('cloud').src="images/blackcloud.png";
+            document.getElementById('btn1').style.display = "block";
+        }
+        function back(){
+            document.getElementById('cleanback').src="images/cleanback.jpg";
+            document.getElementById('cleantree').style.display = "block";
+            document.getElementById('cleantree1').style.display = "none";
+            document.getElementById('cut').style.display = "none";
+            document.getElementById('cleanearth').className = "cleanearth1";
+            document.getElementById('cleansun').src="images/sunhappy.png";
+            document.getElementById('truck').style.display = "none";
+            document.getElementById('cloud').src="images/cloud.png";
+            document.getElementById('btn1').style.display = "none";
+        }
+     </script>
+</body>
+</html>

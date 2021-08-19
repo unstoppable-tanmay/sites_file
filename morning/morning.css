@@ -1,0 +1,223 @@
+html{
+    min-height: 100%;
+}
+body{
+    margin-top: 0px;
+    margin-left: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background: #C6FFDD;  
+    background: -webkit-linear-gradient(to bottom, #f7797d, #FBD786, #C6FFDD); 
+    background: linear-gradient(to bottom, #f7797d, #FBD786, #C6FFDD); 
+}
+
+.container{
+    width: 1300px;
+    height: 650px;
+    overflow: hidden;
+    margin-left: 105px;
+    margin-top: 40px;
+    position: absolute;
+    border-radius: 30px;
+}
+.beach{
+    position: absolute;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.cloud{
+   width: auto;
+   transform: scale(0.9);
+   height: 250px;
+   filter: blur(0.5px);
+   position: absolute;
+   z-index: 5;
+   filter: grayscale(10%);
+   animation: animatecloud 10s linear infinite;
+}
+@keyframes animatecloud {
+    0%{
+        margin-left: -200px;
+    }
+    100%{
+        margin-left: 1300px;
+    }
+}
+.cloud1{
+    width: auto;
+    transform: scale(1);
+    height: 250px;
+    filter: blur(0.5px);
+    margin-top: 50px;
+    position: absolute;
+    z-index: 5;
+    filter: grayscale(10%);
+    animation: animateclouda 15s linear infinite;
+ }
+ @keyframes animateclouda {
+     0%{
+         margin-left: -1000px;
+     }
+     100%{
+         margin-left: 2100px;
+     }
+ }
+ @keyframes animateboat {
+     0%{
+         transform: rotate(0);
+     }
+     50%{
+        transform: rotate(-7deg);
+     }
+     100%{
+        transform: rotate(0);
+    }
+ }
+ .boat1{
+    width: 400px;
+    height: 340px;
+    position: absolute;
+    margin-top: 280px;
+    margin-left: 50px;
+    z-index: 10;
+    animation: animateboat 4s linear infinite;
+ }
+.sun{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    margin-top: -18px;
+    margin-left: 96px;
+    animation: animatesun 7s linear infinite;
+}
+@keyframes animatesun {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+       transform: rotate(-15deg);
+    }
+    75%{
+        transform: rotate(15deg);
+    }
+    100%{
+       transform: rotate(0);
+   }
+}
+.ball{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    margin-top: 600px;
+    margin-left: 950px;
+    z-index: 8;
+    border-radius: 30px;
+    animation: animateball 5s ease infinite;
+}
+@keyframes animateball {
+    0%{
+        transform: translateY(0);
+    }
+    15%{
+        transform: translateY(-200px);
+    }
+    30%{
+        transform: translateY(0);
+    }
+    35%{
+        transform: translateY(-100);
+    }
+    40%{
+        transform: translateY(0);
+    }
+    70%{
+        transform: translateY(-200px);
+    }
+    75%{
+        transform: translateY(0);
+    }
+    80%{
+        transform: translateY(-100px);
+    }
+}
+.sleep{
+    width: 200px;
+    height: 170px;
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 700px;
+    z-index: 10;
+    animation: animatesleep 3s ease infinite;
+}
+@keyframes animatesleep {
+    0%{
+        transform: rotate(0);
+    }
+    50%{
+       transform: rotate(-2deg);
+    }
+    100%{
+       transform: rotate(0);
+   }
+}
+.monkey{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin-top: 310px;
+    margin-left: 1000px;
+    z-index: 5;
+    animation: animatemonkey 2s ease infinite;
+}
+@keyframes animatemonkey {
+    0%{
+       transform: translateY(0);
+    }
+    20%{
+        transform: translateY(-20px);
+    }
+    40%{
+        transform: translateY(0);
+    }
+    60%{
+        transform: translateY(-20px);
+    }
+
+}
+.umb{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 750px;
+    z-index: 7;
+}
+.text{
+    width: 500px;
+    height: 100px;
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 470px;
+    transform: skewY(10deg) skewX(-10deg);
+    font-family: Verdana;
+    font-size: 7rem;
+    font-weight: 700;
+    color: aquamarine;
+    
+}
+@media (max-width: 1118px){
+    
+}
+@media (max-width: 944px){
+
+}
+@media (max-width: 860px){
+     body{
+         transform: rotate(90deg) scale(0.47);
+         margin-left: 350px;
+         margin-top: -25px;
+     }
+     
+}

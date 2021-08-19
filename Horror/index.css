@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+html{
+    min-height: 100%;
+}
+::selection{
+    background: none;
+}
+body{
+    background: #bdc3c7; 
+    background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);
+    background: linear-gradient(to bottom, #2c3e50, #bdc3c7);
+    font-family: 'Creepster', cursive;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    animation: fade ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.container{
+    position: absolute;
+    width: 1400px;
+    height: 700px;
+    margin-top: 8px;
+    margin-left: 62px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.back{
+    position: absolute;
+    width: 1400px;
+    height: 700px;
+    margin-top: 3px;
+    margin-left: 2px;
+    border-radius: 30px;
+}
+.home{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 50px;
+}
+.home1{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 50px;
+    opacity: 0;
+    animation: home 0.2s alternate infinite;
+}
+@keyframes home {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.bond{
+    position: absolute;
+    width: 570px;
+    height: 150px;
+    margin-top: 570px;
+    margin-left: 0px;
+}
+.bond1{
+    position: absolute;
+    width: 570px;
+    height: 150px;
+    margin-top: 570px;
+    margin-left: 850px;
+    z-index: 6;
+}
+.broom{
+    position: absolute;
+    width: 250px;
+    height: 170px;
+    margin-top: 100px;
+    margin-left: 900px;
+    animation: broom 2s linear infinite;
+}
+@keyframes broom {
+    0%{
+        transform: translateX(0px) rotateX(0deg);
+    }
+    50%{
+        transform: translateX(30px) rotate(5deg);
+    }
+    0%{
+        transform: translateX(0px) rotateX(0deg);
+    }
+}
+.bird{
+    position: absolute;
+    width: 150px;
+    height: 110px;
+    margin-top: 100px;
+    margin-left: 700px;
+    animation: bird 2s ease infinite;
+    animation-delay: 1.5s;
+}
+.bird1{
+    position: absolute;
+    width: 80px;
+    height: 50px;
+    margin-top: 80px;
+    margin-left: 400px;
+    animation: bird 2s ease infinite;
+    animation-delay: 2s;
+}
+.bird2{
+    position: absolute;
+    width: 110px;
+    height: 80px;
+    margin-top: 120px;
+    margin-left: 500px;
+    animation: bird 2s ease infinite;
+    animation-delay: 1s;
+}
+.bird3{
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    margin-top: 100px;
+    margin-left: 200px;
+    animation: bird 2s ease infinite;
+    animation-delay: 0.5s;
+}
+.smoke:hover .bird{
+    animation: smoke 2s linear forwards;
+}
+.tree{
+    position: absolute;
+    width: 500px;
+    height: 450px;
+    margin-top: 270px;
+    margin-left: 900px;
+}
+.light{
+    position: absolute;
+    width: 180px;
+    height: 280px;
+    margin-top: 420px;
+    margin-left: 490px;
+}
+.light1{
+    position: absolute;
+    width: 180px;
+    height: 280px;
+    margin-top: 420px;
+    margin-left: 745px;
+    transform: scaleX(-1);
+}
+@keyframes bird {
+    0%{
+        transform: translateY(0px) ;
+    }
+    50%{
+        transform: translateY(-20px) ;
+    }
+    100%{
+        transform: translateY(00px) ;
+    }
+}
+.pump{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-top: 378px;
+    margin-left: 925px;
+    animation: pump 2s ease infinite;
+}
+.pump1{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-top: 308px;
+    margin-left: 1250px;
+    animation: pump 2s ease infinite;
+    animation-delay: 1s;
+}
+.pump2{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-top: 292px;
+    margin-left: 1050px;
+    animation: pump 2s ease infinite;
+    animation-delay: 0.5s;
+}
+.pumpa{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-top: 609px;
+    margin-left: 100px;
+    z-index: 4;
+}
+.pumpb{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    margin-top: 639px;
+    margin-left: 150px;
+    z-index: 4;
+    transform: rotate(15deg);
+}
+.pumpc{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    margin-top: 609px;
+    margin-left: 45px;
+    z-index: 4;
+    transform: rotate(-30deg);
+}
+.pumpd{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-top: 609px;
+    margin-left: 1029px;
+    z-index: 20;
+    transform: rotate(20deg);
+}
+.pumpe{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-top: 609px;
+    margin-left: 969px;
+    z-index: 20;
+    transform: rotate(15deg);
+}
+.pumpf{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin-top: 619px;
+    margin-left: 1079px;
+    z-index: 25;
+    transform: rotate(-20deg);
+}
+.pumpg{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-top: 609px;
+    margin-left: 1109px;
+    z-index: 20;
+    transform: rotate(-15deg);
+}
+@keyframes pump {
+    20%, 40%, 60%, 80%, 100%{
+        transform-origin: top center;
+    }
+    20%{
+       transform: rotate(7deg);
+    }
+    40%{
+        transform: rotate(-5deg);
+    }
+    60%{
+        transform: rotate(3deg);
+    }
+    80%{
+        transform: rotate(-2deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.ghost{
+    position: absolute;
+    width: 180px;
+    height: 250px;
+    margin-top: 420px;
+    margin-left: -175px;
+    animation: ghost 5s linear infinite;
+    z-index: 5;
+}
+
+@keyframes ghost {
+    0%{
+        transform: translateX(1500px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.smoke {
+    position:absolute;
+    margin-top: 240px;
+    margin-left: 500px;
+    font-weight: 900;
+    font-size: 1.5rem;
+    opacity: 0.8;
+    width: 80%;
+    height: 80%;
+}
+
+.smoke ul {
+    margin:0;
+    padding:0;
+    display:flex;
+    
+}
+
+.smoke ul li {
+    list-style:none;
+    font-weight:bold;
+    letter-spacing:10px;
+    filter:blur(1px);
+    color:#000000;
+    font-size:6em;
+    display: inline-block;
+}
+
+
+.smoke ul:hover li {
+    animation: smoke 2s linear forwards;
+}
+
+
+@keyframes smoke {
+    0% {
+        transform: rotate(0deg) translateY(0px);
+        opacity: 1;
+        filter:blur(1px);
+    }
+    100% {
+      transform: rotate(45deg) translateY(-200px);
+        opacity: 0;
+        filter:blur(20px);
+    }
+}
+
+.smoke ul li:nth-child(1){
+    animation-delay:0s
+}
+.smoke ul li:nth-child(2){
+    animation-delay:.4s
+}
+.smoke ul li:nth-child(3){
+    animation-delay:.8s
+}
+.smoke ul li:nth-child(4){
+    animation-delay:1.2s
+}
+.smoke ul li:nth-child(5){
+    animation-delay:1.6s
+}
+.smoke ul li:nth-child(6){
+    animation-delay:2s
+}
+
+@media (max-width: 1118px){
+
+}
+@media (max-width: 1118px){
+    
+}
+@media (max-width: 860PX){
+       body{
+           transform: rotate(90deg) scale(0.50) scaleX(0.93);
+           margin-top: 5px;
+           margin-left: 355px;
+       }
+}

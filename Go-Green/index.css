@@ -1,0 +1,224 @@
+html{
+    min-height: 100%;
+}
+body{
+    background: #000000;   
+    background: -webkit-linear-gradient(to bottom, #e74c3c, #000000); 
+    background: linear-gradient(to bottom, #e74c3c, #000000); 
+
+}
+.container{
+    width: 1400px;
+    height: 700px;
+    margin-top: 4px;
+    margin-left: 60px;
+    border-radius: 30px;
+    overflow: hidden;
+    position: absolute;
+}
+.btn{
+    width: 150px;
+    height: 60px;
+    border-radius: 30px;
+    margin-top: 180px;
+    margin-left: 625px;
+    background: #8A2387; 
+    background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387); 
+    background: linear-gradient(to right, #F27121, #E94057, #8A2387);
+    text-align: center;
+    font-weight: 900;
+    color: black;
+    overflow: hidden;
+    position: absolute; 
+    z-index: 25;
+}
+.cleancontainer{
+    width: 1400px;
+    height: 700px;
+    border-radius: 30px;
+    overflow: hidden;
+    position: absolute;
+}
+.cleanback,.pollutedback{
+    width: 1400px;
+    height: 700px;
+    overflow: hidden;
+    position: absolute;
+    transition: 10s;
+}
+#cleanearth,.cleanearth1{
+    width: 600px;
+    height: 600px;
+    margin-top: 400px;
+    margin-left: 385px;
+    overflow: hidden;
+    position: absolute; 
+    z-index: 15 ;
+}
+.cleanearth{
+    animation: earth 4s forwards 1;
+}
+.cleanearth1{
+    animation: earth1 4s forwards 1;
+}
+@keyframes earth {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+@keyframes earth1 {
+    0%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.cleantree{
+    width: 300px;
+    height: 370px;
+    margin-top: 180px;
+    margin-left: 190px;
+    overflow: hidden;
+    position: absolute; 
+}
+.cleantree1{
+    width: 300px;
+    height: 370px;
+    margin-top: 180px;
+    margin-left: 190px;
+    overflow: hidden;
+    display: none;
+    position: absolute; 
+    animation: tree 5s forwards 1;
+}
+@keyframes tree {
+    0%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+.cut{
+    width: 83px;
+    height: 100px;
+    margin-top: 454px;
+    margin-left: 294px;
+    overflow: hidden;   
+    display: none;
+    position: absolute; 
+    animation: cut 5s forwards 1;
+}
+@keyframes cut {
+    0%{
+        visibility: hidden;
+    }
+    99%{
+        visibility: hidden; 
+    }
+    100%{
+        visibility: visible;
+    }
+}
+.cleansun{
+    width: 200px;
+    height: 200px;
+    margin-top: 13px;
+    margin-left: 70px;
+    overflow: hidden;
+    position: absolute; 
+    opacity: 0.7;
+    animation: sun 3s ease-in-out infinite;
+}
+@keyframes sun {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.truck{
+    width: 280px;
+    height: 180px;
+    margin-top: 383px;
+    margin-left: -100px;
+    overflow: hidden;
+    display: none;
+    position: absolute; 
+    animation: truck 10s forwards 1;
+}
+@keyframes truck {
+    0%{
+        transform: translateX(0px);
+    }
+    27%{
+        transform: translateX(350px);
+    }
+    50%{
+        transform: translateX(350px);
+    }
+    100%{
+        transform: translateX(950px);
+    }
+}
+.cloud{
+    width: 740px;
+    height: 300px;
+    margin-top: 0px;
+    margin-left: -600px;
+    overflow: hidden;
+    position: absolute; 
+    animation: cloud 7s forwards infinite;
+    opacity: 0.8;
+    filter: blur(10px);
+}
+@keyframes cloud {
+    0%{
+        transform: translateX(-600px);
+    }
+    100%{
+        transform: translateX(2050px);
+    }
+}
+.btn1{
+    width: 150px;
+    height: 60px;
+    border-radius: 30px;
+    margin-top: 180px;
+    margin-left: 625px;
+    background: #8A2387; 
+    background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387); 
+    background: linear-gradient(to right, #F27121, #E94057, #8A2387);
+    text-align: center;
+    font-weight: 900;
+    color: black;
+    display: none;
+    overflow: hidden;
+    position: absolute; 
+    z-index: 25;
+}
+
+@media (max-width: 1118px){
+
+}
+@media (max-width: 1118px){
+    
+}
+@media (max-width: 860PX){
+    body{
+        transform: rotate(90deg) scale(0.48) ;
+        margin-top: 8px;
+        margin-left: 340px;
+        background: #000000;   
+    background: -webkit-linear-gradient(to left, #e74c3c, #000000); 
+    background: linear-gradient(to left, #e74c3c, #000000); 
+    }
+}

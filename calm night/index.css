@@ -1,0 +1,331 @@
+
+html{
+    min-height: 100%;
+}
+body{
+    background: #000046;
+    background: -webkit-linear-gradient(to top, #1CB5E0, #000046);  
+    background: linear-gradient(to top, #1CB5E0, #000046);
+    margin: 0;
+    padding: 0;
+}
+.first{
+    width: 1200px;
+    height: 700px;
+    overflow: hidden;
+    top: 1%;
+    left: 0;
+    transform: translate(15%,1%);
+    position: absolute;
+    border-radius: 20px;
+    background-color: black;
+    z-index: 100;
+}
+.first1{
+    display: none;
+}
+.video{
+    width: 1200px;
+    position: absolute;
+}
+.text{
+    text-align: center;
+    margin-top: 35px;
+    margin-left: 250px;
+    font-size: 2rem;
+    width: 700px;
+    color: whitesmoke;
+    font-family: 'Love Ya Like A Sister', cursive;
+    position: absolute;
+}
+.text:hover {
+    animation: smoke 5s forwards 1;
+}
+@keyframes smoke {
+    0% {
+        transform: rotate(0deg) translateY(0px);
+        opacity: 1;
+        filter:blur(1px);
+    }
+    100% {
+      transform: rotate(45deg) translateY(-200px);
+        opacity: 0;
+        filter:blur(20px);
+    }
+}
+.letter{
+    margin-top: 500px;
+    margin-left: 542px;
+    font-size: 5rem;
+    position: absolute;
+}
+.first h3{
+    color: whitesmoke;
+    margin-top: 600px;
+    margin-left: 555px;
+    font-size: 0.98rem;
+    position: absolute;
+}
+.second{
+    width: 1200px;
+    height: 700px;
+    overflow: hidden;
+    top: 1%;
+    left: 0;
+    transform: translate(15%,1%);
+    position: absolute;
+    border-radius: 20px;
+    background-color: black;
+    z-index: 90;
+}
+.second1{
+    display: none;
+}
+.img1, .img2, .img3, .img4{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 370px;
+    transition: 1s; 
+}
+.second h1{
+    font-size: 5rem;
+    margin-top: 500px;
+    margin-left: 552px;
+    position: absolute;
+    z-index: 90;
+}
+.second h3{
+    color: whitesmoke;
+    margin-top: 595px;
+    margin-left: 565px;
+    font-size: 0.98rem;
+    position: absolute;
+    z-index: 80;
+}
+.video1{
+    width: 1200px;
+    z-index: 65;
+    position: absolute;
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.img1{
+     animation: fade 9s linear infinite;
+    animation-delay: 0s;
+    z-index: 70;
+    opacity: 0;
+    border-radius: 20px;
+}
+.img2{
+     animation: fade 9s linear infinite;
+     animation-delay: 3s;
+     z-index: 69;
+     opacity: 0;
+     border-radius: 20px;
+}
+.img3{
+     animation: fade 9s linear infinite;
+     animation-delay: 6s;
+     z-index: 68;
+     opacity: 0;
+     border-radius: 20px;
+}
+.img4{
+     animation: fade 9s linear infinite;
+     animation-delay: 9s;
+     z-index: 67;
+     opacity: 0;
+     border-radius: 20px;
+}
+
+
+
+
+
+
+.back{
+    width: 1200px;
+    height: 700px;
+    overflow: hidden;
+    top: 1%;
+    left: 0;
+    transform: translate(15%,1%);
+    position: absolute;
+    border-radius: 20px;
+}
+.girl{
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    position: absolute;
+    margin-top: 255px;
+    margin-left: 950px;
+    animation: girl 8s ease-in-out infinite;
+}
+@keyframes girl {
+    20%, 40%, 60%, 80%, 100%{
+        transform-origin: top center;
+    }
+    20%{
+       transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-10deg);
+    }
+    60%{
+        transform: rotate(5deg);
+    }
+    80%{
+        transform: rotate(-5deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes love {
+    20%, 40%, 60%, 80%, 100%{
+        transform-origin: top center;
+    }
+    20%{
+       transform: rotate(7deg);
+    }
+    40%{
+        transform: rotate(-5deg);
+    }
+    60%{
+        transform: rotate(3deg);
+    }
+    80%{
+        transform: rotate(-2deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.lo1{
+    width: auto;
+    height: 400px;
+    overflow: hidden;
+    position: absolute;
+    margin-top: -90px;
+    margin-left: 220px;
+    animation: love 8s ease-in-out infinite; 
+    animation-delay: -1s;
+}
+.lo2{
+    width: auto;
+    height: 400px;
+    overflow: hidden;
+    position: absolute;
+    margin-top: -90px;
+    margin-left: 320px;
+    animation: love 8s ease-in-out infinite; 
+    animation-delay: 0.5s;
+}
+.lo3{
+    width: auto;
+    height: 400px;
+    overflow: hidden;
+    position: absolute;
+    margin-top: -90px;
+    margin-left: 460px;
+    animation: love 8s ease-in-out infinite; 
+    animation-delay: -0.5s;
+}
+.lo4{
+    width: auto;
+    height: 400px;
+    overflow: hidden;
+    position: absolute;
+    margin-top: -90px;
+    margin-left: 550px;
+    animation: love 8s ease-in-out infinite; 
+    animation-delay: 1s;
+}
+.love1{
+    width: 90px;
+    height: auto;
+    overflow: hidden;
+    position: absolute;
+    margin-top: -90px;
+    margin-left: 270px;
+    animation: love 8s ease-in-out infinite; 
+    animation-delay: -1.2s;
+}
+.love2{
+    width: 90px;
+    height: auto;
+    overflow: hidden;
+    position: absolute;
+    margin-top: -90px;
+    margin-left: 380px;
+    animation: love 8s ease-in-out infinite; 
+    animation-delay: -0.2s;
+}
+.love3{
+    width: 90px;
+    height: auto;
+    overflow: hidden;
+    position: absolute;
+    margin-top: -90px;
+    margin-left: 480px;
+    animation: love 8s ease-in-out infinite; 
+    animation-delay: 1.2s;
+}
+.boy{
+    width: 470px;
+    height: 400px;
+    overflow: hidden;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 550px;
+}
+.ballon{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: absolute;
+    margin-top: 320px;
+    margin-left: 675px;
+    animation: ballon 4s ease-in-out infinite; 
+}
+@keyframes ballon {
+     50%, 100%{
+        transform-origin: bottom center;
+    }
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    40%{
+        transform: rotate(-5deg);
+    }
+    
+    80%{
+        transform: rotate(5deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@media (max-width: 1118px){
+
+}
+@media (max-width: 1118px){
+    
+}
+@media (max-width: 860PX){
+       body{
+           transform: rotate(90deg) scale(0.47);
+           margin-top: -10px;
+           margin-left: 340px;
+       }
+}

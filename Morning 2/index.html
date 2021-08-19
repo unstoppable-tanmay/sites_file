@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body oncontextmenu="return false;">
+    <div onmouseenter="playAudio()" class="container">
+        <img class="back"  src="images/back.jpg" alt="">
+        <img class="ground" src="images/ground.jpg" alt="">
+        <img class="home"   src="images/home1.png" alt="">
+        <img class="fence" src="images/fence.png" alt="">
+        <img class="tower" src="images/tower.png" alt="">
+        <img class="mill" src="images/mill.png" alt="">
+        <img class="cock"  src="images/cock.png" alt="">
+        <img class="cockhead"  src="images/cockhead.png" alt="">
+        <img class="tree"  src="images/tree.png" alt="">
+        <img class="old"  src="images/old.png" alt="">
+        <img class="oldhead"  src="images/oldhead.png" alt="">
+        
+    </div>
+
+
+    <audio id="audioID"> 
+        <source src="back.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+        var audio1 = document.getElementById("audioID");
+        function playAudio() {
+            audio1.play();
+        }
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>
