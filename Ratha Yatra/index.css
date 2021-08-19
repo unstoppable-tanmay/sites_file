@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&display=swap');
+html{
+    min-height: 100%;
+}
+body{
+    background-color: aliceblue;
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.container{
+    width: 1450px;
+    height: 700px;
+    margin-left: 40px;
+    margin-top: 0px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background: #000046; 
+    background: -webkit-linear-gradient(to top,aliceblue, #1CB5E0, #000046);
+    background: linear-gradient(to top,aliceblue, #1CB5E0, #000046);
+    overflow: hidden;
+    position: absolute;
+    transition: 1s;
+}
+.container1{
+    width: 1450px;
+    height: 700px;
+    margin-left: 40px;
+    margin-top: 0px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background: #2980B9; 
+    background: -webkit-linear-gradient(to top, aliceblue, #6DD5FA, #2980B9); 
+    background: linear-gradient(to top, aliceblue, #6DD5FA, #2980B9); 
+    overflow: hidden;
+    position: absolute;
+    transition: 1s;
+}
+.ratha1{
+    height: 650px;
+    margin-left: 0px;
+    margin-top: 90px;
+    position: absolute;
+    z-index: 6; 
+}
+.sun{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: snow;
+    margin-top: 60px;
+    margin-left: 700px;
+    box-shadow: 5px 5px 70px #fff;
+    transition: 1s;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 800;
+    vertical-align: bottom;
+}       
+.sun h1{
+    margin-top: 30px;
+}                                                        
+.moon{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: yellow;
+    margin-top: 60px;
+    margin-left: 1000px;
+    box-shadow: 5px 5px 70px yellow; 
+    transition: 1s;
+}
+.rathatext{
+    font-family: 'Sacramento', cursive;
+    font-size: 110px;
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 1000px;
+    letter-spacing: -3px;
+    font-weight: 900;
+    text-shadow: 10px 10px 10px 40px #000;
+    transition: 1s;
+}
+.rathatext::after{
+    content: "Yatra";
+    font-size: 70px;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 180px;
+    font-family: 'Sacramento', cursive;
+}
+.wheel1{
+    width: 110px;
+    height: 110px;
+    margin-top: 15px;
+    margin-left: -110px;
+    position: absolute;
+    z-index: 1;
+    animation: wheel 15s linear infinite;
+}
+.rathatext span::before{
+    content: "R";
+    font-size: 110px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -230px;
+    font-family: 'Sacramento', cursive;
+    z-index: 1;
+    transition: 1s;
+}
+.rathatext span::after{
+    content: "TH";
+    letter-spacing: 25px;
+    font-size: 110px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 0px;
+    font-family: 'Sacramento', cursive;
+    z-index: 1;
+    transition: 1s;
+}
+.wheel2{
+    width: 110px;
+    height: 110px;
+    margin-top: 15px;
+    margin-left: 265px;
+    position: absolute;
+    z-index: 1;
+    animation: wheel 15s linear infinite;
+}   
+@keyframes wheel {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.rathatext1{
+    font-family: 'Sacramento', cursive;
+    font-size: 110px;
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 800px;
+    letter-spacing: -3px;
+    font-weight: 900;
+    text-shadow: 10px 10px 10px 40px #000;
+    transition: 1s;
+}
+.rathatext1::after{
+    content: "Yatra";
+    font-size: 70px;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 350px;
+    font-family: 'Sacramento', cursive;
+}
+.rathatext1 .wheel1{
+    width: 110px;
+    height: 110px;
+    margin-top: 15px;
+    margin-left: -110px;
+    position: absolute;
+    animation: wheel1 15s linear infinite;
+}
+.rathatext1 span::before{
+    content: "B";
+    font-size: 110px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -230px;
+    font-family: 'Sacramento', cursive;
+    z-index: 1;
+    transition: 1s;
+}
+.rathatext1 span::after{
+    content: "HUD";
+    letter-spacing: 15px;
+    font-size: 110px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 0px;
+    font-family: 'Sacramento', cursive;
+    z-index: 1;
+    transition: 1s;
+}
+.rathatext1 .wheel2{
+    width: 110px;
+    height: 110px;
+    margin-top: 15px;
+    margin-left: 390px;
+    position: absolute;
+    z-index: 1;
+    animation: wheel1 15s linear infinite;
+}  
+@keyframes wheel1 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+.jratha{
+    height: 200px;
+    position: absolute;
+    margin-top: 530px;
+    margin-left: 300px;
+    animation: jratha 15s linear infinite;
+    z-index: 5;
+}
+@keyframes jratha {
+    100%{
+      transform: translateX(1200px);
+    }
+}
+.jratha1{
+    height: 200px;
+    position: absolute;
+    margin-top: 530px;
+    margin-left: 1500px;
+    animation: jratha1 15s linear infinite;
+    z-index: 5;
+}
+@keyframes jratha1 {
+    100%{
+      transform: translateX(-1200px);
+    }
+}
+.details{
+    position: absolute;
+    margin-top: 750px;
+    width: 1200px;
+    margin-left: 155px;
+    border-radius: 30px;
+    background-color: skyblue;
+    overflow: hidden;
+    word-wrap: break-word;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 25px;
+    text-align: center;
+    z-index: 1;
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+.details1{
+    position: absolute;
+    margin-top: 750px;
+    width: 1200px;
+    margin-left: 155px;
+    border-radius: 30px;
+    background-color: skyblue;
+    overflow: hidden;
+    word-wrap: break-word;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 25px;
+    text-align: center;
+    z-index: 0;
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+.image1{
+    display: none;
+}
+
+@media (max-width: 1118px){
+
+}
+@media (max-width: 1118px){
+    
+}
+@media (max-width: 860PX){
+    body{
+        width: 420px;
+        height: 1400px;
+    }
+    .container{
+        width: 400px;
+        height: 700px;
+        margin-left: 5px;
+        margin-top: 0px;
+    }
+    .container1{
+        width: 400px;
+        height: 700px;
+        margin-left: 5px;
+        margin-top: 0px;
+    }
+    .ratha1{
+        height: 350px;
+        margin-left: 0px;
+        margin-top: 310px;
+    }
+    .sun{
+        width: 80px;
+        height: 80px;
+        margin-top: 60px;
+        margin-left: 100px;
+    }                                                             
+    .moon{
+        width: 80px;
+        height: 80px;
+        margin-top: 60px;
+        margin-left: 200px;
+    }
+    .rathatext{
+        font-size: 50px;
+        margin-top: 200px;
+        margin-left: 100px;
+        letter-spacing: 2px;
+    }
+    .rathatext::after{
+        content: "Yatra";
+        font-size: 30px;
+        margin-top: 50px;
+        margin-left: 100px;
+    }
+    .wheel1{
+        width: 50px;
+        height: 50px;
+        margin-top: 15px;
+        margin-left: -25px;
+    }
+    .rathatext span::before{
+        content: "R";
+        font-size: 50px;
+        margin-top: 10px;
+        margin-left: -80px;
+    }
+    .rathatext span::after{
+        content: "TH";
+        letter-spacing: 10px;
+        font-size: 50px;
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+    .wheel2{
+        width: 50px;
+        height: 50px;
+        margin-top: 15px;
+        margin-left: 150px;
+    } 
+
+
+    .rathatext1{
+        font-size: 50px;
+        margin-top: 200px;
+        margin-left: 200px;
+        letter-spacing: -3px;
+    }
+    .rathatext1::after{
+        content: "Yatra";
+        font-size: 30px;
+        margin-top: 60px;
+        margin-left: 110px;
+        letter-spacing: 1px;
+    }
+    .rathatext1 .wheel1{
+        width: 50px;
+        height: 50px;
+        margin-top: 15px;
+        margin-left: -80px;
+        position: absolute;
+    }
+    .rathatext1 span::before{
+        content: "B";
+        font-size: 50px;
+        margin-top: 10px;
+        margin-left: -140px;
+    }
+    .rathatext1 span::after{
+        content: "HUD";
+        letter-spacing: 5px;
+        font-size: 50px;
+        margin-top: 10px;
+        margin-left: -25px;
+    }
+    .rathatext1 .wheel2{
+        width: 50px;
+        height: 50px;
+        margin-top: 15px;
+        margin-left: 145px;
+    }  
+    .jratha{
+        height: 100px;
+        margin-top: 580px;
+        margin-left: -100px;
+        z-index: 6;
+    }
+    .jratha1{
+        height: 100px;
+        margin-top: 580px;
+        margin-left: 400px;
+        z-index: 6;
+    }
+    .details{
+        margin-top: 700px;
+        width: 400px;
+        margin-left: 10px;
+        border-radius: 10px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .details1{
+        margin-top: 700px;
+        width: 400px;
+        margin-left: 10px;
+        border-radius: 30px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .details img{
+        width: 400px;
+        height: 400px;
+    }
+}

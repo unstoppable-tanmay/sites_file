@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&display=swap');
+html{
+    min-height: 100%;
+}
+body{  background-color: rgb(240, 246, 255);
+       scroll-behavior: smooth;
+       font-weight: 900;
+}
+body::-webkit-scrollbar{
+       display: none;}
+.container { 
+    width: 1500px;
+    height: 800px;
+    margin-top: 0px;
+    margin-left: 20px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background: #000046; 
+    background: -webkit-linear-gradient(to top,aliceblue, #1CB5E0, #000046);
+    background: linear-gradient(to top,aliceblue, #1CB5E0, #000046);
+    overflow: hidden;
+    position: absolute;
+    transition: 1s;
+}
+.container1{
+    width: 1450px;
+    height: 700px;
+    margin-left: 40px;
+    margin-top: 0px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background: red; 
+    overflow: hidden;
+    position: absolute;
+    transition: 1s;
+}
+.gundicha{
+     position: absolute;
+     width: 300px;
+     height: 250px;
+     margin-top: 500px;
+     margin-left: 1200px;
+     z-index: 2;
+     transition: 1s;
+}
+.ratha{
+    position: absolute;
+     width: 500px;
+     height: 350px;
+     margin-top: 400px;
+     margin-left: 10px;
+     z-index: 2;
+     transition: 1s;
+}
+.ratha2{
+    position: absolute;
+    height: 350px;
+    margin-top: 540px;
+    margin-left: 50px ;
+    animation: ratha2 15s linear infinite;
+    z-index: 3;
+} 
+@keyframes ratha2 { 
+    0%{  transform: translateX(0px);  }
+    100%{  transform: translateX(1200px); }
+}
+.sun{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: snow;
+    margin-top: 50px;
+    margin-left: 1000px;
+    box-shadow: 5px 5px 70px #fff;
+    transition: 1s;
+}                                
+.rathatext{
+    position: absolute;
+    letter-spacing: -3px; 
+    margin-top: 400px;
+    margin-left: 800px;
+    font-family: 'Sacramento', cursive;
+    font-size: 110px;
+    text-shadow: 10px 10px 10px 40px #000;
+    transition: 1s;
+
+}
+.rathatext::after{
+    content: "Yatra";
+    font-size: 70px;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 120px;
+    font-family: 'Sacramento', cursive;
+}
+.sudarsana1{ 
+    margin-top: 15px; 
+    margin-left: -110px;
+    position: absolute;
+    width:100px ;
+    height: 100px;
+    z-index: 1;
+    animation: sudarsana 15s linear infinite ;
+}
+.moon{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: yellow;
+    margin-top: 60px;
+    margin-left: 1000px;
+    box-shadow: 5px 5px 70px yellow; 
+    transition: 1s;
+}
+.rathatext span::before{
+    content: "R";
+    font-size: 110px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -230px;
+    font-family: 'Sacramento', cursive;
+    z-index: 1;
+    transition: 1s;
+}
+.rathatext span::after{
+    content: "TH";
+    letter-spacing: 25px;
+    font-size: 110px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -20px;
+    font-family: 'Sacramento', cursive;
+    z-index: 1;
+    transition: 1s;
+}
+.sudarsana2{ 
+    margin-top: 15px; 
+    margin-left: 250px;
+    position: absolute;
+    width:100px ;
+    height: 100px;
+    z-index: 1;
+    animation: sudarsana 15s linear infinite ;
+}
+
+@keyframes sudarsana {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+        }
+}
+.rathatext1{
+    font-family: 'Sacramento', cursive;
+    font-size: 110px;
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 800px;
+    letter-spacing: -3px;
+    font-weight: 900;
+    text-shadow: 10px 10px 10px 40px #000;
+    transition: 1s;
+}
+.rathatext1::after{
+    content: "Yatra";
+    font-size: 70px;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 350px;
+    font-family: 'Sacramento', cursive;
+}
+.rathatext1 .wheel1{
+    width: 110px;
+    height: 110px;
+    margin-top: 15px;
+    margin-left: -110px;
+    position: absolute;
+    animation: wheel1 15s linear infinite;
+}
+.rathatext1 span::before{
+    content: "B";
+    font-size: 110px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -230px;
+    font-family: 'Sacramento', cursive;
+    z-index: 1;
+    transition: 1s;
+}
+.rathatext1 span::after{
+    content: "HUD";
+    letter-spacing: 15px;
+    font-size: 110px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 0px;
+    font-family: 'Sacramento', cursive;
+    z-index: 1;
+    transition: 1s;
+}
+.rathatext1 .wheel2{
+    width: 110px;
+    height: 110px;
+    margin-top: 15px;
+    margin-left: 390px;
+    position: absolute;
+    z-index: 1;
+    animation: wheel1 15s linear infinite;
+}  
+@keyframes wheel1 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}

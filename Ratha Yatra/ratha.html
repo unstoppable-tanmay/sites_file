@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Rathayatra</title>
+    <link rel="stylesheet" href="ratha.css">
+</head>
+<body>  
+    <div class="container" id="container">
+      <img src="images/" alt="" class="gundicha" id="gundicha">
+      <img src="images//ratha-removebg-preview (1) - Copy.png" alt="" class="ratha" id="ratha">
+      <img src="" alt="" class="" id="">
+      <a href="second.html"><div class="sun"  id="sun" onclick="change()"></div></a>
+      <div class="rathatext" id="rathatext"> 
+          <span></span>
+          <img src="images//sudarsana_chakra-removebg-preview - Copy (1) - Copy.png" class="sudarsana1" id="sudarsana1">
+          <img src="images//sudarsana_chakra-removebg-preview - Copy (2).png" class="sudarsana2" id="sudarsana2">
+      </div>
+      <img src="images//ratha2-removebg-preview - Copy.png" class="ratha2" id="ratha2" alt="">
+    </div>
+    <script>
+        function change(){
+            document.getElementById("rathatext").style.display = "none";
+            document.getElementById("gundicha").style.display = "none";
+            document.getElementById("ratha").style.display = "none";
+            var sun = document.getElementById("sun");
+            var container = document.getElementById("container");
+            sun.classList.toggle("moon");
+            container.classList.toggle("container1");
+            
+        }
+    </script>
+</body>
+</html> 

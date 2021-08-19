@@ -1,0 +1,53 @@
+html{
+    min-height: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(skyblue,rgb(32, 187, 174));
+    height: 1300px;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.Road{
+    position: absolute;
+    width: 1550px;
+    height: 330px;
+}
+.marqee{
+    position: absolute;
+    margin-top: 125px;
+    margin-left: 0px;
+    padding: 0;
+}
+.marqee img{
+    width: 350px;
+}
+.om1{
+    margin-top: 350px;
+    margin-left: 340px;
+    position: absolute;
+}
+.om1 h1{
+    font-size: 80px;
+    position: absolute;
+    margin-top: 250px;
+    margin-left: -100px;
+}
+.om1 h2{
+    font-size: 80px;
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 600px;
+}
+.om2{
+    margin-top: 1000px;
+    position: absolute;
+}
+.om2 img{
+    width: 400px;
+    padding-left: 50px;
+}
